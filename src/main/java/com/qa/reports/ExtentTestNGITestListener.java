@@ -14,8 +14,8 @@ import com.qa.util.TestUtil;
 public class ExtentTestNGITestListener implements ITestListener{
 
 	private static ExtentReports extent = ExtentManager.createInstance();
-	private static ThreadLocal<ExtentTest> parentTest = new ThreadLocal<>();
-    private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
+	private static ThreadLocal<ExtentTest> parentTest = new ThreadLocal<ExtentTest>();
+    private static ThreadLocal<ExtentTest> test = new ThreadLocal<ExtentTest>();
 	
     @Override
 	public synchronized void onStart(ITestContext context) {
